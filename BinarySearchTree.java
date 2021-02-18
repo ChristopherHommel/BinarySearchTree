@@ -26,7 +26,8 @@ public class BinarySearchTree {
 		
 		tree.inOrderTraverseTree(tree.root);
 
-
+		System.out.println("test"); 
+		
 	}
 	
 	//Set a location for a starting point of a tree
