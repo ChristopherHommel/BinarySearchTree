@@ -26,7 +26,6 @@ public class BinarySearchTree {
 		
 		tree.inOrderTraverseTree(tree.root);
 
-		System.out.println("test");  
 		
 	}
 	
@@ -312,7 +311,6 @@ public class BinarySearchTree {
 		}
 		
 		/**
-		 * 
 		 * @return The value of the key of the current node
 		 */
 		public int getKey() {
@@ -320,7 +318,6 @@ public class BinarySearchTree {
 		}
 		
 		/**
-		 * 
 		 * @return The value of the left child of the current node
 		 */
 		public Node getLeftChild() {
@@ -328,7 +325,6 @@ public class BinarySearchTree {
 		}
 		
 		/**
-		 * 
 		 * @return The value of the right child of the current node
 		 */
 		public Node getRightChild() {
@@ -336,7 +332,6 @@ public class BinarySearchTree {
 		}
 			
 		/**
-		 * 
 		 * @param key Set a value for the key in this node
 		 */
 		public void setKey(int key) {
@@ -344,7 +339,6 @@ public class BinarySearchTree {
 		}
 		
 		/**
-		 * 
 		 * @param node Set a new left child for the current node
 		 */
 		public void setLeftChild(Node node) {
@@ -352,7 +346,6 @@ public class BinarySearchTree {
 		}
 		
 		/**
-		 * 
 		 * @param node Set a new right child for the current node
 		 */
 		public void setRightChild(Node node) {
