@@ -26,7 +26,7 @@ public class BinarySearchTree {
 		
 		tree.inOrderTraverseTree(tree.root);
 
-		System.out.println("test"); 
+		System.out.println("test");  
 		
 	}
 	
