@@ -5,28 +5,11 @@
  */
 public class BinarySearchTree {
 
+	/**
+	 * Main entry point to create a binary search tree
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		BinarySearchTree tree = new BinarySearchTree();
-
-		tree.insert(50);
-		tree.insert(25);
-		tree.insert(15);
-		tree.insert(30);
-		tree.insert(75);
-		tree.insert(85);
-		tree.insert(85);
-		tree.insert(20);
-		tree.insert(55);
-		tree.insert(15);
-		tree.insert(30);
-		tree.insert(95);
-		tree.insert(100);
-		tree.insert(45);
-		tree.insert(35);
-		
-		tree.inOrderTraverseTree(tree.root);  
-		
-		
 
 	}
 	
@@ -102,6 +85,33 @@ public class BinarySearchTree {
 			}
 		}
 		return currentNode;
+	}
+	
+	/**
+	 * Invert the binary tree
+	 * To be called in main
+	 */
+	public void invert() {
+		root = invert(root);
+	}
+	
+	/**
+	 * Invert the binary tree
+	 * @param node Each node to be visited
+	 * @return the new value at each node
+	 */
+	public Node invert(Node node) {
+		if(node == null) {
+			return node;
+		}
+		
+		Node left = invert(node.getLeftChild());
+		Node right = invert(node.getRightChild());
+		
+		node.setLeftChild(right);
+		node.setRightChild(left);
+		
+		return node;
 	}
 
 	/**
