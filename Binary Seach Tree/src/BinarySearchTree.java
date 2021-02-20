@@ -24,7 +24,7 @@ public class BinarySearchTree {
 		tree.insert(45);
 		tree.insert(35);
 		
-		tree.inOrderTraverseTree(tree.root); 
+		tree.inOrderTraverseTree(tree.root);  
 		
 		
 
