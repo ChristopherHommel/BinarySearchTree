@@ -104,7 +104,7 @@ public class BinarySearchTree {
 		if(node == null) {
 			return node;
 		}
-		 
+		  
 		Node left = invert(node.getLeftChild());
 		Node right = invert(node.getRightChild());
 		
